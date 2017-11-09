@@ -1,142 +1,91 @@
 body {
   background-color: #700024;
 }
-h1 {
-  text-decoration: underline;
+h3 {
+  margin-top: 40px;
+  color: white;
   text-align: center;
 }
 .content {
   width: 85%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .top-row {
   display: flex;
-  margin: 0;
   flex-wrap: wrap;
 }
 .middle-row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
 }
 .bottom-row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-
 }
 .row-item {
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
+  background-size: 100%;
   flex: 1;
+  height: 0;
+  padding-bottom: 31%;
+  border: solid 3px rgb(143, 7, 51);
+  border-radius: 10px;
+  margin: 2px;
 }
 .item-1 {
   background-image: url('images/opera-house-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
+
 }
 .item-2 {
   background-image: url('images/building-in-bath-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
+
 }
 .item-3 {
   background-image: url('images/sainte-chappelle-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
+
 }
 .item-4 {
   background-image: url('images/edinburgh-castle-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
+
 }
 .item-5 {
   background-image: url('images/natural-history-ice-rink-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
+
 }
 .item-6 {
   background-image: url('images/sata-blur-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
+
 }
 .item-7 {
   background-image: url('images/zeke-train-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
+
 }
 .item-8 {
   background-image: url('images/st-pancras-hotel-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
+
 }
 .item-9 {
   background-image: url('images/twin-peaks-view-preview.jpg');
-  background-size: 100%;
-  flex: 1;
-  width: 28%;
-  height: 0;
-  padding-bottom: 28%;
-  border: solid 3px rgb(143, 7, 51);
-  border-radius: 7px;
-  margin: 0 2px;
 }
 
 .footer {
-  width: 83%;
+  display: flex;
+  width: 85%;
   background-color: #780328;
-  opacity: 0.4;
   height: 120px;
-  border: solid 5px rgba(143, 7, 51, 0.7);
-  border-radius: 5px;
+  box-sizing: border-box;
+  border: solid 3px rgba(143, 7, 51, 0.7);
+  border-radius: 10px;
   margin: 20px auto;
+  align-items: center;
+  text-align: center;
+}
+.footer-item {
+  flex: 1;
+  max-height: 100%;
+}
+.footer img {
+  max-width: 100%;
+}
+.square-footer-objects {
+  height: 64px;
 }
