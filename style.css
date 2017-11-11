@@ -3,8 +3,8 @@ body {
   font-family: helvetica, arial, sans-serif;
 }
 @keyframes slide-in-nav {
-    from {top: -50px;}
-    to {top: 0px;}
+  from {top: -50px;}
+  to {top: 0px;}
 }
 nav {
   display: block;
@@ -23,7 +23,11 @@ nav {
 }
 nav a {
   text-decoration: none;
+  font-weight: lighter;
   color: #fff;
+}
+nav a:hover {
+  color: rgb(143, 7, 49);
 }
 .content {
   width: 75%;
@@ -41,22 +45,21 @@ nav a {
   display: flex;
   flex-wrap: wrap;
 }
-.row-item {
-
-  background-size: 100%;
-  background-color: #fff;
+.photo-container {
+  display: flex;
+  background-color: #7F6553;
   flex: 1;
-  height: 0;
-  padding-bottom: 31%;
   border: solid 3px rgb(143, 7, 49);
   border-radius: 10px;
   margin: 2px;
 }
-.row-item:hover{
-  opacity: 0.5;
-  transition: opacity 1s;
-  filter: alpha(opacity=50%);
+.row-item {
+  background-size: 100%;
+  flex: 1;
+  padding-bottom: 100%;
+  border-radius: 6px;
 }
+
 .item-1 {
   background-image: url('images/opera-house-preview.jpg');
 }
