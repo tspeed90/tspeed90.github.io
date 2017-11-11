@@ -30,8 +30,9 @@ nav a:hover {
   color: rgb(143, 7, 49);
 }
 .content {
+  position: relative;
   width: 75%;
-  margin: 50px auto;
+  margin: 70px auto;
 }
 .top-row {
   display: flex;
@@ -46,52 +47,67 @@ nav a:hover {
   flex-wrap: wrap;
 }
 .photo-container {
-  display: flex;
-  background-color: #7F6553;
+  position: relative;
+  background-color: #fff;
   flex: 1;
   border: solid 3px rgb(143, 7, 49);
   border-radius: 10px;
   margin: 2px;
 }
-.row-item {
+.photo {
   background-size: 100%;
-  flex: 1;
   padding-bottom: 100%;
   border-radius: 6px;
 }
-
-.item-1 {
+.text {
+  position: absolute;
+  display: none;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 30px;
+}
+.photo-container:hover .text {
+  display: block;
+  color: #fff;
+  background-color: #000;
+  opacity: .6;
+}
+.photo-1 {
   background-image: url('images/opera-house-preview.jpg');
 }
-.item-2 {
+.photo-2 {
   background-image: url('images/building-in-bath-preview.jpg');
 
 }
-.item-3 {
+.photo-3 {
   background-image: url('images/sainte-chappelle-preview.jpg');
 
 }
-.item-4 {
+.photo-4 {
   background-image: url('images/edinburgh-castle-preview.jpg');
 
 }
-.item-5 {
+.photo-5 {
   background-image: url('images/natural-history-ice-rink-preview.jpg');
 
 }
-.item-6 {
+.photo-6 {
   background-image: url('images/sata-blur-preview.jpg');
 
 }
-.item-7 {
+.photo-7 {
   background-image: url('images/zeke-train-preview.jpg');
 
 }
-.item-8 {
+.photo-8 {
   background-image: url('images/st-pancras-hotel-preview.jpg');
 
 }
-.item-9 {
+.photo-9 {
   background-image: url('images/twin-peaks-view-preview.jpg');
 }
 .my-profiles-tab {
@@ -115,6 +131,7 @@ nav a:hover {
   border: solid 3px rgba(143, 7, 51, 0.7);
   border-radius: 10px;
   margin: auto;
+  margin-bottom: 75px;
   align-items: center;
   text-align: center;
 }
