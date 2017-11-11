@@ -2,15 +2,38 @@ body {
   background-color: #700024;
   font-family: helvetica, arial, sans-serif;
 }
+@keyframes slide-in-nav {
+    from {top: -50px;}
+    to {top: 0px;}
+}
+nav {
+  display: block;
+  background-color: #9a8576;
+  color: rgb(143, 7, 49);
+  font-size: 1.2em;
+  border: solid 3px rgb(143, 7, 49);
+  border-top: none;
+  top: 0;
+  right: 10px;
+  padding: 10px 25px;
+  text-align: right;
+  z-index: 1;
+  position: absolute;
+  animation: slide-in-nav 2s;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
 h3 {
-  margin-top: 40px;
+  margin-top: 30px;
   color: white;
+  font-size: 1.3em;
   text-align: center;
 }
 .content {
-  width: 85%;
-  margin: 20px auto;
-
+  width: 75%;
+  margin: 60px auto 40px auto;
 }
 .top-row {
   display: flex;
@@ -30,7 +53,7 @@ h3 {
   flex: 1;
   height: 0;
   padding-bottom: 31%;
-  border: solid 3px rgb(143, 7, 51);
+  border: solid 3px rgb(143, 7, 49);
   border-radius: 10px;
   margin: 2px;
 }
@@ -39,14 +62,7 @@ h3 {
   transition: opacity 1s;
   filter: alpha(opacity=50%);
 }
-.photo-description {
-  visibility: hidden;
-  height: 100%;
-}
-.photo-description:hover {
-  visibility: visible;
-  z-index: 1;
-}
+
 .item-1 {
   background-image: url('images/opera-house-preview.jpg');
 }
@@ -84,7 +100,7 @@ h3 {
 
 .footer {
   display: flex;
-  width: 85%;
+  width: 75%;
   background-color: #780328;
   height: 120px;
   box-sizing: border-box;
