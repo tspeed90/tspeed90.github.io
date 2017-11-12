@@ -7,7 +7,6 @@ body {
   to {top: 0px;}
 }
 nav {
-  display: block;
   background-color: #9a8576;
   color: rgb(143, 7, 49);
   font-size: 1.2em;
@@ -17,7 +16,6 @@ nav {
   top: 0;
   right: 10px;
   padding: 10px 25px;
-  z-index: 1;
   position: absolute;
   animation: slide-in-nav 2s;
 }
@@ -30,7 +28,6 @@ nav a:hover {
   color: rgb(143, 7, 49);
 }
 .content {
-  position: relative;
   width: 75%;
   margin: 70px auto;
 }
@@ -74,41 +71,7 @@ nav a:hover {
   display: block;
   color: #fff;
   background-color: #000;
-  opacity: .6;
-}
-.photo-1 {
-  background-image: url('images/opera-house-preview.jpg');
-}
-.photo-2 {
-  background-image: url('images/building-in-bath-preview.jpg');
-
-}
-.photo-3 {
-  background-image: url('images/sainte-chappelle-preview.jpg');
-
-}
-.photo-4 {
-  background-image: url('images/edinburgh-castle-preview.jpg');
-
-}
-.photo-5 {
-  background-image: url('images/natural-history-ice-rink-preview.jpg');
-
-}
-.photo-6 {
-  background-image: url('images/sata-blur-preview.jpg');
-
-}
-.photo-7 {
-  background-image: url('images/zeke-train-preview.jpg');
-
-}
-.photo-8 {
-  background-image: url('images/st-pancras-hotel-preview.jpg');
-
-}
-.photo-9 {
-  background-image: url('images/twin-peaks-view-preview.jpg');
+  opacity: 0.6;
 }
 .my-profiles-tab {
   background-color: #9a8576;
@@ -119,7 +82,7 @@ nav a:hover {
   border: solid 3px rgb(143, 7, 49);
   border-bottom: none;
   padding: 10px 25px;
-  max-width: 13%;
+  width: 180px;
   margin: auto;
 }
 .footer {
@@ -143,5 +106,5 @@ nav a:hover {
   max-width: 100%;
 }
 .square-footer-objects {
-  height: 64px;
+  max-height: 64px;
 }
