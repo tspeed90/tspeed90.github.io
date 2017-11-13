@@ -28,6 +28,7 @@ nav a:hover {
   color: rgb(143, 7, 49);
 }
 .content {
+  position: relative;
   width: 75%;
   margin: 70px auto;
 }
@@ -107,4 +108,21 @@ nav a:hover {
 }
 .square-footer-objects {
   max-height: 64px;
+}
+.fullSizeImage {
+  position: absolute;
+  /* will change to display: flex in javascript to show full size image*/
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+}
+.fullSizeImage img {
+  max-height: 90%;
+  max-width: 60%;
+  margin: auto;
 }
