@@ -50,10 +50,12 @@ let images = [
 ];
 
   let randomImages = document.querySelectorAll(".random-photo");
+  let textElement = document.querySelectorAll(".text");
 
   for (let i = 0; i < randomImages.length; i++) {
     let randomIndex = Math.floor(Math.random() * images.length);
     let image = images[randomIndex];
     randomImages[i].style.backgroundImage = "url(" + image.url + ")";
+    textElement[i].innerText = image.text;
     images.splice(randomIndex, 1);
   }
