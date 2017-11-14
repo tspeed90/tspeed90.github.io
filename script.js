@@ -63,16 +63,15 @@ for (let i = 0; i < randomImages.length; i++) {
   textElement[i].innerText = image.text;
   images.splice(randomIndex, 1);
 }
-let clickedImage;
 
 for (let i = 0; i < randomImages.length; i++) {
   randomImages[i].parentNode.addEventListener('click', function showFullSizeImage(e) {
     for (let i = 0; i < imagesUnspliced.length; i++) {
       if (imagesUnspliced[i].text === e.target.innerText) {
-        clickedImage = imagesUnspliced[i];
         fullSizeImageDiv.style.display = "flex";
-
-        imageToDisplay.src = imagesUnspliced[i].url;
+        let fullSizeImagePath = imagesUnspliced[i].url.replace(/-preview/, "");
+        imageToDisplay.src = fullSizeImagePath;
+        console.log(fullSizeImagePath);
       }
     }
   });
@@ -80,4 +79,13 @@ for (let i = 0; i < randomImages.length; i++) {
 
 fullSizeImageDiv.addEventListener('click', function() {
   fullSizeImageDiv.style.display = "none";
+});
+document.addEventListener('keydown', function(e) {
+  console.log(e);
+  if (e.keyCode === 27 || e.keyCode === 32) {
+    fullSizeImageDiv.style.display = "none";
+
+    e.preventDefault();
+  }
+
 });
