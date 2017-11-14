@@ -49,13 +49,35 @@ let images = [
   "altText": ""}
 ];
 
-  let randomImages = document.querySelectorAll(".random-photo");
-  let textElement = document.querySelectorAll(".text");
+const imagesUnspliced = images.slice();
 
-  for (let i = 0; i < randomImages.length; i++) {
-    let randomIndex = Math.floor(Math.random() * images.length);
-    let image = images[randomIndex];
-    randomImages[i].style.backgroundImage = "url(" + image.url + ")";
-    textElement[i].innerText = image.text;
-    images.splice(randomIndex, 1);
-  }
+let randomImages = document.querySelectorAll(".random-photo");
+let textElement = document.querySelectorAll(".text");
+let imageToDisplay = document.querySelector(".largePhoto");
+let fullSizeImageDiv = document.querySelector(".fullSizeImage");
+
+for (let i = 0; i < randomImages.length; i++) {
+  let randomIndex = Math.floor(Math.random() * images.length);
+  let image = images[randomIndex];
+  randomImages[i].style.backgroundImage = "url(" + image.url + ")";
+  textElement[i].innerText = image.text;
+  images.splice(randomIndex, 1);
+}
+let clickedImage;
+
+for (let i = 0; i < randomImages.length; i++) {
+  randomImages[i].parentNode.addEventListener('click', function showFullSizeImage(e) {
+    for (let i = 0; i < imagesUnspliced.length; i++) {
+      if (imagesUnspliced[i].text === e.target.innerText) {
+        clickedImage = imagesUnspliced[i];
+        fullSizeImageDiv.style.display = "flex";
+
+        imageToDisplay.src = imagesUnspliced[i].url;
+      }
+    }
+  });
+}
+
+fullSizeImageDiv.addEventListener('click', function() {
+  fullSizeImageDiv.style.display = "none";
+});

@@ -110,7 +110,7 @@ nav a:hover {
   max-height: 64px;
 }
 .fullSizeImage {
-  position: absolute;
+  position: fixed;
   /* will change to display: flex in javascript to show full size image*/
   display: none;
   background-color: rgba(0, 0, 0, 0.8);
