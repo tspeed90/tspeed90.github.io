@@ -88,7 +88,7 @@ fullSizeImageDiv.addEventListener('click', function() {
   exitFullSize();
 });
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode === 27 || e.keyCode === 32) {
+  if (e.key === "Escape" || e.key === " " || e.keyCode === 27 || e.keyCode === 32) {
     exitFullSize();
     e.preventDefault();
   }
