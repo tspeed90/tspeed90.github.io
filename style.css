@@ -6,6 +6,11 @@ body {
   from {top: -50px;}
   to {top: 0px;}
 }
+
+@keyframes ease-in-opacity {
+  from {opacity: 0.0;}
+  to {opacity 0.7;}
+}
 nav {
   background-color: #9a8576;
   color: rgb(143, 7, 49);
@@ -65,14 +70,18 @@ nav a:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  text-align: center;
   padding: 0 30px;
+  opacity: 0.7;
+  animation: ease-in-opacity 1s;
 }
 .photo-container:hover .text {
-  display: block;
+  display: flex;
   color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   background-color: #000;
-  opacity: 0.6;
+  vertical-align: middle;
 }
 .my-profiles-tab {
   background-color: #9a8576;
