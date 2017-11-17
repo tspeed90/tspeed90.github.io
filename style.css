@@ -1,6 +1,6 @@
 body {
   background-color: #700024;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Barlow Condensed', arial, sans-serif;
 }
 @keyframes slide-in-nav {
   from {top: -50px;}
@@ -8,34 +8,60 @@ body {
 }
 
 @keyframes ease-in-opacity {
-  from {opacity: 0.0;}
-  to {opacity 0.7;}
+  from {opacity: 0.2;}
+  to {opacity: 0.7;}
 }
 nav {
   background-color: #9a8576;
   color: rgb(143, 7, 49);
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.3em;
   border: solid 3px rgb(143, 7, 49);
   border-top: none;
   top: 0;
   right: 10px;
-  padding: 10px 25px;
+  padding: 8px 25px;
   position: absolute;
   animation: slide-in-nav 2s;
 }
 nav a {
   text-decoration: none;
+  font-size: 1.3em;
   font-weight: lighter;
   color: #fff;
 }
 nav a:hover {
   color: rgb(143, 7, 49);
 }
+.header, .footer {
+  width: 75%;
+  background-color: #780328;
+  color: white;
+  box-sizing: border-box;
+  border: solid 3px rgb(143, 7, 49);
+  border-radius: 10px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.header {
+  margin-top: 65px;
+}
+h1 {
+  font-weight: lighter;
+}
+.header-text {
+  display: block;
+}
+.header-subtext {
+  display: block;
+  margin: auto;
+  font-size: 1.3em;
+}
 .content {
   position: relative;
   width: 75%;
-  margin: 70px auto;
+  margin: 20px auto;
 }
 .top-row {
   display: flex;
@@ -56,6 +82,7 @@ nav a:hover {
   border: solid 3px rgb(143, 7, 49);
   border-radius: 10px;
   margin: 2px;
+  cursor: pointer;
 }
 .photo {
   background-size: 100%;
@@ -77,36 +104,33 @@ nav a:hover {
 .photo-container:hover .text {
   display: flex;
   color: #fff;
+  font-size: 1.3em;
   text-align: center;
   align-items: center;
   justify-content: center;
   background-color: #000;
   vertical-align: middle;
 }
+
 .my-profiles-tab {
   background-color: #9a8576;
-  margin-top: 30px;
   color: white;
-  font-size: 1.3em;
+  font-size: 1.6em;
+  font-weight: lighter;
   text-align: center;
   border: solid 3px rgb(143, 7, 49);
   border-bottom: none;
   padding: 10px 25px;
   width: 180px;
   margin: auto;
+  margin-top: 60px;
 }
+
 .footer {
   display: flex;
-  width: 75%;
-  background-color: #780328;
+  margin-top: 0px;
   height: 120px;
-  box-sizing: border-box;
-  border: solid 3px rgba(143, 7, 51, 0.7);
-  border-radius: 10px;
-  margin: auto;
   margin-bottom: 75px;
-  align-items: center;
-  text-align: center;
 }
 .footer-item {
   flex: 1;
