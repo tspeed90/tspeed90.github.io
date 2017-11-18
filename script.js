@@ -55,6 +55,8 @@ let randomImages = document.querySelectorAll(".random-photo");
 let textElement = document.querySelectorAll(".text");
 let imageToDisplay = document.querySelector(".largePhoto");
 let fullSizeImageDiv = document.querySelector(".fullSizeImage");
+let profilePhoto =  document.querySelector(".about-me");
+let navAbout = document.querySelector(".about-button");
 
 for (let i = 0; i < randomImages.length; i++) {
   let randomIndex = Math.floor(Math.random() * images.length);
@@ -88,6 +90,18 @@ for (let i = 0; i < randomImages.length; i++) {
     }
   });
 }
+//new!
+function toggleInfo() {
+  if (profilePhoto.style.opacity === "0") {
+    profilePhoto.style.opacity = "1";
+  } else {
+    profilePhoto.style.opacity = "0";
+  }
+}
+
+navAbout.addEventListener('click', toggleInfo);
+profilePhoto.addEventListener('click', toggleInfo);
+
 function exitFullSize() {
   fullSizeImageDiv.style.display = "none";
   // reset img src to prevent previous photo from displaying while current img downloads
