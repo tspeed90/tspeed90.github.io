@@ -90,17 +90,6 @@ for (let i = 0; i < randomImages.length; i++) {
     }
   });
 }
-//new!
-function toggleInfo() {
-  if (profilePhoto.style.opacity === "0") {
-    profilePhoto.style.opacity = "1";
-  } else {
-    profilePhoto.style.opacity = "0";
-  }
-}
-
-navAbout.addEventListener('click', toggleInfo);
-profilePhoto.addEventListener('click', toggleInfo);
 
 function exitFullSize() {
   fullSizeImageDiv.style.display = "none";
