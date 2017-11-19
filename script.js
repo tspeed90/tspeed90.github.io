@@ -61,7 +61,7 @@ let navAbout = document.querySelector(".about-button");
 for (let i = 0; i < randomImages.length; i++) {
   let randomIndex = Math.floor(Math.random() * images.length);
   let image = images[randomIndex];
-  randomImages[i].style.backgroundImage = "url(" + image.url + ")";
+  randomImages[i].querySelector('img').src = image.url;
   randomImages[i].setAttribute("aria-label", image.altText);
   textElement[i].innerText = image.text;
   images.splice(randomIndex, 1);
