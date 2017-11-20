@@ -31,7 +31,7 @@ nav a {
 nav a:hover {
   color: rgb(143, 7, 49);
 }
-.header, .footer {
+.footer, .about-page {
   width: 75%;
   background-color: #780328;
   color: white;
@@ -43,24 +43,10 @@ nav a:hover {
   text-align: center;
   justify-content: center;
 }
-.header {
-  margin-top: 65px;
-}
-h1 {
-  font-weight: lighter;
-}
-.header-text {
-  display: block;
-}
-.header-subtext {
-  display: block;
-  margin: auto;
-  font-size: 1.3em;
-}
 .content {
   position: relative;
   width: 75%;
-  margin: 20px auto;
+  margin: 100px auto 0 auto;
 }
 .top-row {
   display: flex;
@@ -131,7 +117,17 @@ h1 {
   flex-direction: column;
   font-size: 1.4em;
 }
-.my-profiles-tab {
+.about-page {
+  padding: 20px 60px;
+  text-align: justify;
+  font-size: 1.2em;
+}
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+.label-tab {
   background-color: #9a8576;
   color: white;
   font-size: 1.6em;
@@ -142,13 +138,13 @@ h1 {
   padding: 10px 25px;
   width: 180px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .footer {
   display: flex;
   margin-top: 0px;
   height: 120px;
-  margin-bottom: 75px;
+  margin-bottom: 300px;
 }
 .footer-item {
   flex: 1;
