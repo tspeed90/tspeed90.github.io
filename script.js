@@ -63,6 +63,7 @@ for (let i = 0; i < randomImages.length; i++) {
   let image = images[randomIndex];
   randomImages[i].querySelector('img').src = image.url;
   randomImages[i].setAttribute("aria-label", image.altText);
+  randomImages[i].querySelector('img').alt = image.text;
   textElement[i].innerText = image.text;
   images.splice(randomIndex, 1);
 }
