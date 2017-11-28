@@ -18,7 +18,7 @@ nav {
   border-top: none;
   top: 0;
   right: 10px;
-  padding: 8px 25px;
+  padding: 8px 15px;
   position: absolute;
   animation: slide-in-nav 2s;
 }
@@ -154,7 +154,7 @@ h2 {
   max-width: 100%;
 }
 .square-footer-objects {
-  max-height: 90px;
+  max-height: 85px;
 }
 .fullSizeImage {
   position: fixed;
