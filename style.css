@@ -169,7 +169,7 @@ h2 {
   z-index: 1;
 }
 .fullSizeImage img {
-  max-height: 90%;
+  max-height: 99%;
   max-width: 60%;
   margin: auto;
 }
