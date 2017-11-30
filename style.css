@@ -127,6 +127,9 @@ h2 {
   font-weight: bold;
   margin: 0;
 }
+.a11y-link {
+  color: white;
+}
 .label-tab {
   background-color: #9a8576;
   color: white;
