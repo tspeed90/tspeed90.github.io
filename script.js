@@ -46,7 +46,7 @@ let images = [
   "altText": "A hilltop view of streets and buildings in San Francisco. A mountain range is visible on the horizon behind the skyline."},
   {"url": "images/zeke-train-preview.jpg",
   "text": "My nephew playing in an old train at a park.",
-  "altText": "A young boy in black clothing and red bo tie smiles in the doorway of a retired yellow train. The train reads 'Huntington'."}
+  "altText": "A young boy smiles in the doorway of a retired yellow train. The train reads 'Huntington'."}
 ];
 
 const imagesUnspliced = images.slice();
