@@ -57,6 +57,7 @@ let imageToDisplay = document.querySelector(".largePhoto");
 let fullSizeImageDiv = document.querySelector(".fullSizeImage");
 let profilePhoto =  document.querySelector(".about-me");
 let navAbout = document.querySelector(".about-button");
+let returnHomeTab = document.querySelector(".return-home");
 
 for (let i = 0; i < randomImages.length; i++) {
   let randomIndex = Math.floor(Math.random() * images.length);
@@ -104,5 +105,16 @@ document.addEventListener('keydown', function(e) {
   if (e.key === "Escape" || e.key === " " || e.keyCode === 27 || e.keyCode === 32) {
     exitFullSize();
     e.preventDefault();
+  }
+});
+let totalHeight = document.body.scrollHeight;
+let screenHeight = window.innerHeight;
+window.addEventListener('scroll', function(e) {
+  console.log(totalHeight);
+  let scrolledDown = document.documentElement.scrollTop > document.body.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+  if (scrolledDown + screenHeight >= totalHeight - 200) {
+    returnHomeTab.style.display = "block";
+  } else {
+    returnHomeTab.style.display = "none";
   }
 });
