@@ -155,7 +155,7 @@ footer {
   flex: 1;
   max-height: 100%;
 }
-.footer img {
+footer img {
   max-width: 100%;
 }
 .square-footer-objects {
