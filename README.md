@@ -1,4 +1,4 @@
-This repository is for my personal webpage on Github Pages. It is a simple photo gallery with some information about me. 
+This repository is for my personal webpage on Github Pages. It contains a photography gallery and some information about me. 
 
 It can be viewed at: **https://tspeed90.github.io.**
 
