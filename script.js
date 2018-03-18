@@ -112,7 +112,7 @@ let screenHeight = window.innerHeight;
 window.addEventListener('scroll', function(e) {
   console.log(totalHeight);
   let scrolledDown = document.documentElement.scrollTop > document.body.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
-  if (scrolledDown + screenHeight >= totalHeight - 200) {
+  if (scrolledDown + screenHeight >= totalHeight - 450) {
     returnHomeTab.style.display = "block";
   } else {
     returnHomeTab.style.display = "none";
