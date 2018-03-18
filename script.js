@@ -110,7 +110,6 @@ document.addEventListener('keydown', function(e) {
 let totalHeight = document.body.scrollHeight;
 let screenHeight = window.innerHeight;
 window.addEventListener('scroll', function(e) {
-  console.log(totalHeight);
   let scrolledDown = document.documentElement.scrollTop > document.body.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
   if (scrolledDown + screenHeight >= totalHeight - 450) {
     returnHomeTab.style.display = "block";
