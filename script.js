@@ -54,10 +54,12 @@ const imagesUnspliced = images.slice();
 let randomImages = document.querySelectorAll(".random-photo");
 let textElement = document.querySelectorAll(".text");
 let imageToDisplay = document.querySelector(".largePhoto");
+let descText = document.querySelector(".img-desc")
 let fullSizeImageDiv = document.querySelector(".fullSizeImage");
 let profilePhoto =  document.querySelector(".about-me");
 let navAbout = document.querySelector(".about-button");
 let returnHomeTab = document.querySelector(".return-home");
+
 
 for (let i = 0; i < randomImages.length; i++) {
   let randomIndex = Math.floor(Math.random() * images.length);
@@ -88,6 +90,8 @@ for (let i = 0; i < randomImages.length; i++) {
         fullSizeImageDiv.style.display = "flex";
         let fullSizeImagePath = imagesUnspliced[i].url.replace(/-preview/, "");
         imageToDisplay.src = fullSizeImagePath;
+        descText.textContent = imagesUnspliced[i].text;
+        console.log(descText.textContent);
       }
     }
   });

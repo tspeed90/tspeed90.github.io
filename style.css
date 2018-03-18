@@ -51,7 +51,6 @@ footer, .about-page {
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* position: relative; */
   width: 75%;
   margin: 100px auto 0 auto;
 }
@@ -163,13 +162,30 @@ footer img {
   bottom: 0;
   left: 0;
   right: 0;
-  align-items: center;
+  justify-content: center;
   z-index: 1;
 }
 .fullSizeImage img {
-  max-height: 99%;
+  position: absolute;
+  top: 8px;
+  max-height: 88%;
   max-width: 60%;
   margin: auto;
+}
+.fullSizeImage p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  opacity: .8;
+  z-index: 2;
+  color: white;
+  font-size: 26px;
+  margin: 0 auto;
 }
 .label-tab.return-home {
   display: none;
