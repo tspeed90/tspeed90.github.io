@@ -1,8 +1,9 @@
 html {
   font-size: 16px;
+  background-color: #700024;
 }
 body {
-  background-color: #700024;
+  background-color: inherit;
   font-family: 'Barlow Condensed', arial, sans-serif;
 }
 @keyframes slide-in-nav {
@@ -16,6 +17,30 @@ body {
 h1, .nav-title {
   margin-left: -2000px;
   height: 0px;
+}
+
+.font-sizes {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 10;
+  padding: 5px;
+  justify-content: space-around;
+  min-height: 100px;
+}
+
+.small-font {
+  font-size: 18px;
+}
+
+.medium-font {
+  font-size: 22px;
+}
+
+.large-font {
+  font-size: 26px;
 }
 
 nav {

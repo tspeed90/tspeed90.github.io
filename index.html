@@ -1,148 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tammy Speed - Gallery</title>
 </head>
-  <body>
-      <h1>Tammy Speed, Developer-In-Training</h1>
-    <nav role="navigation">
-      <h2 class="nav-title">Navigation</h2>
-      <a href="#about-tab" class="about-button" id="home">About</a> /
-      <a href="#profile-links">Links</a>
-    </nav>
-    <div class="fullSizeImage">
-      <p class="img-desc"> Hello</p>
-      <img src="" class="largePhoto"/>
-      
-    </div>
-    <section class="content">
-        <!-- aria-label being set in javascript on each photo -->
-      <div class="photo-container" tabindex="0" role="button">
-        <div class="photo random-photo">
-          <img src="" alt=""/>
-        </div>
-        <div class="text"></div>
-      </div>
-      <div class="photo-container" tabindex="0" role="button">
-        <div class="photo random-photo">
-          <img src="" alt=""/>
-        </div>
-        <div class="text"></div>
-      </div>
-      <div class="photo-container" tabindex="0" role="button">
-        <div class="photo random-photo">
-          <img src="" alt=""/>
-        </div>
-        <div class="text"></div>
-      </div>
-      <div class="photo-container" tabindex="0" role="button">
-        <div class="photo random-photo">
-          <img src="" alt=""/>
-        </div>
-        <div class="text"></div>
-      </div>
-      <div class="photo-container middle-container">
-        <div class="photo about-me">
-          <img src="images/me.jpg" alt="headshot photo"/>
-        </div>
-        <div class="about-text">
-          <h3>Tammy Speed</h3>
-          <p>Aspiring developer &bull; baking &amp; cooking enthusiast &bull; explorer &bull; photography hobbyist</p>
-        </div>
-      </div>
-      <div class="photo-container" tabindex="0" role="button">
-        <div class="photo random-photo">
-          <img src="" alt=""/>
-        </div>
-        <div class="text"></div>
-      </div>
-      <div class="photo-container" tabindex="0" role="button">
-        <div class="photo random-photo">
-          <img src="" alt=""/>
-        </div>
-        <div class="text"></div>
-      </div>
-      <div class="photo-container" tabindex="0" role="button">
-        <div class="photo random-photo">
-          <img src="" alt=""/>
-        </div>
-        <div class="text"></div>
-      </div>
-      <div class="photo-container" tabindex="0" role="button">
-        <div class="photo random-photo">
-          <img src="" alt=""/>
-        </div>
-        <div class="text">
-        </div>
-      </div>
-    </section>
-    <div class="label-tab" id="about-tab"><h2>About Me</h2></div>
-    <div class="about-page">
-      <p class="about-greeting">Hello,</p>
-      <p>I'm Tammy and I am a self-taught programming “student”.
-        I started teaching myself to code in early 2017 after a long while of being
-        interested, but never making the jump. I began with Java
-        working through Codecademy &amp; Udacity and worked on a few small projects
-        before switching to HTML, CSS &amp; Javascript. I've recently begun learning things
-        such as Command Line/Vim, Git and Test Driven Development. I was recently 
-        accepted to the London developer training programme, Founders &amp; Coders, for 
-        their Spring 2018 cohort beginning in February. I'm very excited about this 
-        opportunity and am looking forward to developing my skills by working and learning
-        with others. </p>
 
-        <p>I graduated from California State University, Fresno with a
-        Bachelor's degree in Communicative Disorders and Deaf Studies.
-        I worked as a Sign Language Interpreter for 3 years, working with the
-        Deaf, and occasionally Deaf-Blind, communities. During that time,
-        I learned and experienced the importance of accessibility and how these
-        communities often feel overlooked and ignored. I hope that I can bring
-        my experiences into my future work by being an advocate for groups that
-        are sometimes forgotten. Building this webpage provided me with an
-        awesome opportunity to learn more about accessibility practices. I
-        utilized ARIA label and tabindex to make all of my elements
-        accessible by screen readers, testing it with ChromeVox and
-        <a href="https://ffoodd.github.io/a11y.css/" class="a11y-link"/>a11y.css.</a>
-        I appreciate the things I've learned so far and
-        look forward to making content that is accessible to all. </p>
+<body>
+  <h1>Tammy Speed, Developer-In-Training</h1>
+  <aside class="font-sizes">
+    <span class="font small-font" role="button" tabindex="0">A</span>
+    <span class="font medium-font" role="button" tabindex="0">A</span>
+    <span class="font large-font" role="button" tabindex="0">A</span>
+  </aside>
+  <nav role="navigation">
+    <h2 class="nav-title">Navigation</h2>
+    <a href="#about-tab" class="about-button" id="home">About</a> /
+    <a href="#profile-links">Links</a>
+  </nav>
+  <div class="fullSizeImage">
+    <p class="img-desc"> Hello</p>
+    <img src="" class="largePhoto" />
 
-        <p>This gallery is a place for me to display some of the photos I've taken
-        over the last few years that I'm proud of. Please browse, click and hover to
-        learn more about me and the photos you see on this page. You can also
-        refresh to see different images. Enjoy!</p>
+  </div>
+  <section class="content">
+    <!-- aria-label being set in javascript on each photo -->
+    <div class="photo-container" tabindex="0" role="button">
+      <div class="photo random-photo">
+        <img src="" alt="" />
+      </div>
+      <div class="text"></div>
     </div>
-    <div class="label-tab" id="profile-links" aria-label="links will open in new browser tab">
-      <h2>Links</h2>
+    <div class="photo-container" tabindex="0" role="button">
+      <div class="photo random-photo">
+        <img src="" alt="" />
+      </div>
+      <div class="text"></div>
     </div>
-    <footer>
-      <div class="footer-item">
-        <a href="https://github.com/tspeed90/tspeed90.github.io" target="_blank">
-          <img src="images/github-logo.png" class="square-footer-objects" aria-label="git hub logo" alt="GitHub logo"/>
-        </a>
+    <div class="photo-container" tabindex="0" role="button">
+      <div class="photo random-photo">
+        <img src="" alt="" />
       </div>
-      <div class="footer-item">
-        <a href="https://www.codewars.com/users/tspeed90" target="_blank">
-          <img src="https://www.codewars.com/users/tspeed90/badges/large" aria-label="code wars logo" alt="Codewars logo">
-        </a>
+      <div class="text"></div>
+    </div>
+    <div class="photo-container" tabindex="0" role="button">
+      <div class="photo random-photo">
+        <img src="" alt="" />
       </div>
-      <div class="footer-item">
-        <a href="https://www.freecodecamp.org/tspeed90" target="_blank">
-          <img src="images/freecodecamp.png" class="square-footer-objects" aria-label="free code camp logo" alt="Free Code Camp logo"/>
-        </a>
+      <div class="text"></div>
+    </div>
+    <div class="photo-container middle-container">
+      <div class="photo about-me">
+        <img src="images/me.jpg" alt="headshot photo" />
       </div>
-      <div class="footer-item">
-        <a href="guess-the-number/index.html" target="_blank">
-          <img src="images/guess-the-number.png" class="square-footer-objects" aria-label="guess the number logo" alt="Guess the Number logo"/>
-        </a>
+      <div class="about-text">
+        <h3>Tammy Speed</h3>
+        <p>Aspiring developer &bull; baking &amp; cooking enthusiast &bull; explorer &bull; photography hobbyist</p>
       </div>
-    </footer>
-    <div class="label-tab return-home">
-      <a href="#home">^ Back To Top</a></div>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <div class="photo-container" tabindex="0" role="button">
+      <div class="photo random-photo">
+        <img src="" alt="" />
+      </div>
+      <div class="text"></div>
+    </div>
+    <div class="photo-container" tabindex="0" role="button">
+      <div class="photo random-photo">
+        <img src="" alt="" />
+      </div>
+      <div class="text"></div>
+    </div>
+    <div class="photo-container" tabindex="0" role="button">
+      <div class="photo random-photo">
+        <img src="" alt="" />
+      </div>
+      <div class="text"></div>
+    </div>
+    <div class="photo-container" tabindex="0" role="button">
+      <div class="photo random-photo">
+        <img src="" alt="" />
+      </div>
+      <div class="text">
+      </div>
+    </div>
+  </section>
+  <div class="label-tab" id="about-tab">
+    <h2>About Me</h2>
+  </div>
+  <div class="about-page">
+    <p class="about-greeting">Hello,</p>
+    <p>I'm Tammy and I am a self-taught programming “student”. I started teaching myself to code in early 2017 after a long
+      while of being interested, but never making the jump. I began with Java working through Codecademy &amp; Udacity and
+      worked on a few small projects before switching to HTML, CSS &amp; Javascript. I've recently begun learning things
+      such as Command Line/Vim, Git and Test Driven Development. I was recently accepted to the London developer training
+      programme, Founders &amp; Coders, for their Spring 2018 cohort beginning in February. I'm very excited about this opportunity
+      and am looking forward to developing my skills by working and learning with others. </p>
+
+    <p>I graduated from California State University, Fresno with a Bachelor's degree in Communicative Disorders and Deaf Studies.
+      I worked as a Sign Language Interpreter for 3 years, working with the Deaf, and occasionally Deaf-Blind, communities.
+      During that time, I learned and experienced the importance of accessibility and how these communities often feel overlooked
+      and ignored. I hope that I can bring my experiences into my future work by being an advocate for groups that are sometimes
+      forgotten. Building this webpage provided me with an awesome opportunity to learn more about accessibility practices.
+      I utilized ARIA label and tabindex to make all of my elements accessible by screen readers, testing it with ChromeVox
+      and
+      <a href="https://ffoodd.github.io/a11y.css/" class="a11y-link" />a11y.css.</a>
+      I appreciate the things I've learned so far and look forward to making content that is accessible to all. </p>
+
+    <p>This gallery is a place for me to display some of the photos I've taken over the last few years that I'm proud of. Please
+      browse, click and hover to learn more about me and the photos you see on this page. You can also refresh to see different
+      images. Enjoy!</p>
+  </div>
+  <div class="label-tab" id="profile-links" aria-label="links will open in new browser tab">
+    <h2>Links</h2>
+  </div>
+  <footer>
+    <div class="footer-item">
+      <a href="https://github.com/tspeed90/tspeed90.github.io" target="_blank">
+        <img src="images/github-logo.png" class="square-footer-objects" aria-label="git hub logo" alt="GitHub logo" />
+      </a>
+    </div>
+    <div class="footer-item">
+      <a href="https://www.codewars.com/users/tspeed90" target="_blank">
+        <img src="https://www.codewars.com/users/tspeed90/badges/large" aria-label="code wars logo" alt="Codewars logo">
+      </a>
+    </div>
+    <div class="footer-item">
+      <a href="https://www.freecodecamp.org/tspeed90" target="_blank">
+        <img src="images/freecodecamp.png" class="square-footer-objects" aria-label="free code camp logo" alt="Free Code Camp logo"
+        />
+      </a>
+    </div>
+    <div class="footer-item">
+      <a href="guess-the-number/index.html" target="_blank">
+        <img src="images/guess-the-number.png" class="square-footer-objects" aria-label="guess the number logo" alt="Guess the Number logo"
+        />
+      </a>
+    </div>
+  </footer>
+  <div class="label-tab return-home">
+    <a href="#home">^ Back To Top</a>
+  </div>
+  <script src="script.js"></script>
+</body>
 
 
 </html>
