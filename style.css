@@ -7,45 +7,68 @@ body {
   font-family: 'Barlow Condensed', arial, sans-serif;
 }
 @keyframes slide-in-nav {
-  from {top: -50px;}
-  to {top: 0px;}
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0px;
+  }
 }
 @keyframes ease-in-opacity {
-  from {opacity: 0.2;}
-  to {opacity: 0.7;}
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.7;
+  }
 }
-h1, .nav-title {
+h1,
+.nav-title {
   margin-left: -2000px;
   height: 0px;
 }
 
 .font-sizes {
   display: flex;
+  justify-content: flex-end;
   color: white;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 10;
-  padding: 5px;
-  justify-content: space-around;
-  min-height: 100px;
+  min-height: 2rem;
+  line-height: 0.5;
+  margin-bottom: 2rem;
+}
+
+.font-options:hover {
+  cursor: pointer;
 }
 
 .small-font {
+  display: inline-block;
   font-size: 18px;
+  margin-right: 5px;
+  margin-left: 10px;
+  vertical-align: top;
 }
 
 .medium-font {
+  display: inline-block;
   font-size: 22px;
+  margin-right: 5px;
+  vertical-align: top;
 }
 
 .large-font {
+  display: inline-block;
+  font-size: 26px;
+  vertical-align: top;
+}
+
+.font-options-text {
   font-size: 26px;
 }
 
 nav {
   background-color: #9a8576;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 2rem;
   border: solid 3px rgb(143, 7, 49);
   border-top: none;
@@ -59,7 +82,7 @@ nav a {
   text-decoration: none;
   border-bottom: 2px solid white;
   font-size: 1.9rem;
-  color: #FAFAFA;
+  color: #fafafa;
   margin: 10px;
 }
 
@@ -67,10 +90,11 @@ nav a:hover {
   color: rgb(143, 7, 49);
   border-bottom: 2px solid rgb(143, 7, 49);
 }
-footer, .about-page {
+footer,
+.about-page {
   width: 75%;
   background-color: rgb(120, 3, 40);
-  color: #FAFAFA;
+  color: #fafafa;
   box-sizing: border-box;
   border: solid 3px rgb(143, 7, 49);
   border-radius: 10px;
@@ -86,9 +110,10 @@ footer, .about-page {
   margin: 100px auto 0 auto;
 }
 
-.photo-container, .middle-container {
+.photo-container,
+.middle-container {
   position: relative;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border: solid 3px rgb(143, 7, 49);
   border-radius: 10px;
   margin: 2px;
@@ -98,7 +123,8 @@ footer, .about-page {
   padding-bottom: 100%;
   border-radius: 6px;
 }
-.text, .about-text {
+.text,
+.about-text {
   position: absolute;
   display: none;
   border-radius: 6px;
@@ -109,17 +135,16 @@ footer, .about-page {
   padding: 0 30px;
   opacity: 0.7;
   animation: ease-in-opacity 1s;
-
 }
-.photo-container:hover .text, .photo-container:hover .about-text {
+.photo-container:hover .text,
+.photo-container:hover .about-text {
   display: grid;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 1.4em;
   text-align: center;
   align-items: center;
   justify-content: center;
   background-color: #000;
-
 }
 .middle-container {
   box-sizing: border-box;
@@ -127,7 +152,8 @@ footer, .about-page {
   cursor: default;
 }
 
-.about-me img, .random-photo img {
+.about-me img,
+.random-photo img {
   position: absolute;
   max-width: 100%;
   border-radius: 6px;
@@ -152,12 +178,12 @@ h2 {
   font-weight: bold;
   margin: 0;
 }
-.a11y-link {
-  color: #FAFAFA;
+.a11y-links {
+  color: #fafafa;
 }
 .label-tab {
   background-color: #9a8576;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 1.6em;
   font-weight: lighter;
   text-align: center;
@@ -212,7 +238,7 @@ footer img {
   width: 100%;
   padding: 20px;
   text-align: center;
-  opacity: .8;
+  opacity: 0.8;
   z-index: 2;
   color: white;
   font-size: 26px;
@@ -228,7 +254,7 @@ footer img {
   max-width: 160px;
 }
 .label-tab.return-home a {
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 @media screen and (max-width: 400px) {
@@ -240,8 +266,8 @@ footer img {
     width: 90%;
     grid-template-columns: 1fr;
   }
-  .about-page, footer {
+  .about-page,
+  footer {
     width: 100%;
   }
-
 }
