@@ -11,11 +11,7 @@
 
 <body>
   <h1>Tammy Speed, Developer-In-Training</h1>
-  <aside class="font-sizes">
-    <span class="font small-font" role="button" tabindex="0">A</span>
-    <span class="font medium-font" role="button" tabindex="0">A</span>
-    <span class="font large-font" role="button" tabindex="0">A</span>
-  </aside>
+
   <nav role="navigation">
     <h2 class="nav-title">Navigation</h2>
     <a href="#about-tab" class="about-button" id="home">About</a> /
@@ -26,90 +22,108 @@
     <img src="" class="largePhoto" />
 
   </div>
-  <section class="content">
-    <!-- aria-label being set in javascript on each photo -->
-    <div class="photo-container" tabindex="0" role="button">
-      <div class="photo random-photo">
-        <img src="" alt="" />
+  <main>
+    <section class="content">
+      <!-- aria-label being set in javascript on each photo -->
+      <div class="photo-container" tabindex="0" role="button">
+        <div class="photo random-photo">
+          <img src="" alt="" />
+        </div>
+        <div class="text"></div>
       </div>
-      <div class="text"></div>
+      <div class="photo-container" tabindex="0" role="button">
+        <div class="photo random-photo">
+          <img src="" alt="" />
+        </div>
+        <div class="text"></div>
+      </div>
+      <div class="photo-container" tabindex="0" role="button">
+        <div class="photo random-photo">
+          <img src="" alt="" />
+        </div>
+        <div class="text"></div>
+      </div>
+      <div class="photo-container" tabindex="0" role="button">
+        <div class="photo random-photo">
+          <img src="" alt="" />
+        </div>
+        <div class="text"></div>
+      </div>
+      <div class="photo-container middle-container">
+        <div class="photo about-me">
+          <img src="images/me.jpg" alt="headshot photo" />
+        </div>
+        <div class="about-text">
+          <h3>Tammy Speed</h3>
+          <p>Aspiring developer &bull; baking &amp; cooking enthusiast &bull; explorer &bull; photography hobbyist</p>
+        </div>
+      </div>
+      <div class="photo-container" tabindex="0" role="button">
+        <div class="photo random-photo">
+          <img src="" alt="" />
+        </div>
+        <div class="text"></div>
+      </div>
+      <div class="photo-container" tabindex="0" role="button">
+        <div class="photo random-photo">
+          <img src="" alt="" />
+        </div>
+        <div class="text"></div>
+      </div>
+      <div class="photo-container" tabindex="0" role="button">
+        <div class="photo random-photo">
+          <img src="" alt="" />
+        </div>
+        <div class="text"></div>
+      </div>
+      <div class="photo-container" tabindex="0" role="button">
+        <div class="photo random-photo">
+          <img src="" alt="" />
+        </div>
+        <div class="text">
+        </div>
+      </div>
+    </section>
+    <div class="label-tab" id="about-tab">
+      <h2>About Me</h2>
     </div>
-    <div class="photo-container" tabindex="0" role="button">
-      <div class="photo random-photo">
-        <img src="" alt="" />
-      </div>
-      <div class="text"></div>
-    </div>
-    <div class="photo-container" tabindex="0" role="button">
-      <div class="photo random-photo">
-        <img src="" alt="" />
-      </div>
-      <div class="text"></div>
-    </div>
-    <div class="photo-container" tabindex="0" role="button">
-      <div class="photo random-photo">
-        <img src="" alt="" />
-      </div>
-      <div class="text"></div>
-    </div>
-    <div class="photo-container middle-container">
-      <div class="photo about-me">
-        <img src="images/me.jpg" alt="headshot photo" />
-      </div>
-      <div class="about-text">
-        <h3>Tammy Speed</h3>
-        <p>Aspiring developer &bull; baking &amp; cooking enthusiast &bull; explorer &bull; photography hobbyist</p>
-      </div>
-    </div>
-    <div class="photo-container" tabindex="0" role="button">
-      <div class="photo random-photo">
-        <img src="" alt="" />
-      </div>
-      <div class="text"></div>
-    </div>
-    <div class="photo-container" tabindex="0" role="button">
-      <div class="photo random-photo">
-        <img src="" alt="" />
-      </div>
-      <div class="text"></div>
-    </div>
-    <div class="photo-container" tabindex="0" role="button">
-      <div class="photo random-photo">
-        <img src="" alt="" />
-      </div>
-      <div class="text"></div>
-    </div>
-    <div class="photo-container" tabindex="0" role="button">
-      <div class="photo random-photo">
-        <img src="" alt="" />
-      </div>
-      <div class="text">
-      </div>
-    </div>
-  </section>
-  <div class="label-tab" id="about-tab">
-    <h2>About Me</h2>
-  </div>
-  <div class="about-page">
-    <p class="about-greeting">Hello,</p>
-    <p>I'm Tammy and I am a soon-to-be Javascript developer! I started teaching myself to code in early 2017 after a long while
-      of being interested, but never making the jump. I began with Java working through Codecademy &amp; Udacity and worked
-      on a few small projects before switching to HTML, CSS &amp; Javascript. I have since taken part in the London developer
-      training program, Founders and Coders, which has been an amazing experience! </p>
+    <section class="about-page">
+      <aside class="font-sizes">
+        <div class="font-options-text">
+          Font size options:
+        </div>
+        <div class="font-options">
+          <span class="small-font" role="button" tabindex="0">A</span>
+          <span class="medium-font" role="button" tabindex="0">A</span>
+          <span class="large-font" role="button" tabindex="0">A</span>
+        </div>
+      </aside>
+      <p class="about-greeting">Hello,</p>
+      <p>
+        I'm Tammy and I am a Javascript/Node.js developer! I began learning to code in early 2017 after a long while of being interested,
+        but never making the jump. I began with Java working through Codecademy &amp; Udacity and worked on a few small projects
+        before switching to HTML, CSS &amp; Javascript. I have since taken part in the London developer training program,
+        Founders and Coders, which was an amazing experience.
+      </p>
 
-    <p>I graduated from California State University, Fresno with a Bachelor's degree in Deaf Studies and worked as a Sign Language
-      Interpreter for 3 years. I learned and experienced the importance of accessibility and how the deaf &amp; deaf-blind
-      communities often feel overlooked and ignored. As a result of my previous experiences, I highly value accessibility
-      and creating tech that is mindful of the user experience for people from all walks of life. I am continually using
-      this webpage as an opportunity to implement and familiarize myself with accessibility practices, putting into practice
-      things like ARIA attributes, customizable font size, strong, descriptive alt-text as well as utilizing Chromevox and
-      other tools like
-      <a href="https://ffoodd.github.io/a11y.css/" class="a11y-link" />a11y.css.</a> for auditing the page.</p>
+      <p>
+        I graduated from California State University, Fresno with a Bachelor's degree in Deaf Studies and worked as a Sign Language
+        Interpreter for 3 years. I learned and experienced the importance of accessibility and how the deaf &amp; deaf-blind
+        communities often feel overlooked and ignored. As a result, I highly value accessibility and creating tech that is
+        mindful of the user experience for people from all walks of life. I am continually using this webpage as an opportunity
+        to implement and familiarize myself with accessibility practices, putting into practice things like ARIA attributes,
+        customizable font size, strong, descriptive alt-text as well as utilizing Chromevox and other tools like
+        <a href="https://developers.google.com/web/tools/lighthouse/" class="a11y-links">Lighthouse</a> and
+        <a href="https://www.deque.com/axe/" class="a11y-links">aXe</a> for auditing the page.
+      </p>
 
-    <p>This gallery is a place for me to display some of the photos I've taken over the last few years that I'm proud of. Please
-      browse, click and hover to learn more about me and the photos you see on this page. You can also refresh to see different
-      images. Enjoy!</p>
-  </div>
+      <p>
+        This gallery is a place for me to share photos I've taken that I enjoy. Please browse, click and hover to learn more about
+        me and the photos you see on this page. You can also refresh to see different images. Enjoy!
+      </p>
+      </div>
+  </main>
+
   <div class="label-tab" id="profile-links" aria-label="links will open in new browser tab">
     <h2>Links</h2>
   </div>
@@ -124,10 +138,10 @@
         <img src="https://www.codewars.com/users/tspeed90/badges/large" aria-label="code wars logo" alt="Codewars logo">
       </a>
     </div>
-    <div class="footer-item">
+    <div class="footer-item ">
       <a href="https://www.freecodecamp.org/tspeed90" target="_blank">
-        <img src="images/freecodecamp.png" class="square-footer-objects" aria-label="free code camp logo" alt="Free Code Camp logo"
-        />
+        <img src="images/freecodecamp.png " class="square-footer-objects" aria-label="free code camp logo" alt="Free
+        Code Camp logo" />
       </a>
     </div>
     <div class="footer-item">
