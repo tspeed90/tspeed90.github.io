@@ -201,12 +201,17 @@ footer {
   height: 120px;
   margin-bottom: 300px;
 }
+
 .footer-item {
   max-height: 100%;
 }
 footer img {
   max-width: 100%;
 }
+.hidden {
+  display: none;
+}
+
 .square-footer-objects {
   max-height: 85px;
 }
