@@ -211,11 +211,7 @@ footer img {
 .hidden {
   display: none;
 }
-/* 
-.footer-item:hover {
-  transform: scale(1.1);
-  transition-duration: 0.7s;
-} */
+
 .square-footer-objects {
   max-height: 85px;
 }
