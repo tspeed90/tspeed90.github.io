@@ -208,6 +208,9 @@ footer {
 footer img {
   max-width: 100%;
 }
+.hidden {
+  display: none;
+}
 
 .footer-item:hover {
   transform: scale(1.1);
