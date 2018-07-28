@@ -274,5 +274,30 @@ footer img {
   .about-page,
   footer {
     width: 100%;
+    padding: 1.5rem;
+  }
+  .font-sizes {
+    justify-content: space-between;
+  }
+  .font-options-text {
+    line-height: 1.2;
+  }
+  .font-options {
+    display: flex;
+    line-height: 1.2;
+    justify-content: space-between;
+    min-width: 3rem;
+  }
+  .small-font {
+    margin: 0;
+    padding: 0;
+  }
+  .medium-font {
+    margin: 0;
+    padding: 0;
+  }
+  .large-font {
+    margin: 0;
+    padding: 0;
   }
 }
