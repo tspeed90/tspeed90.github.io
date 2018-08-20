@@ -200,7 +200,7 @@ h2 {
 }
 footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 0px;
   height: 120px;
   margin-bottom: 300px;
