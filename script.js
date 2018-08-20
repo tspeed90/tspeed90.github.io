@@ -116,6 +116,7 @@ let returnHomeTab = document.querySelector('.return-home');
 let content = document.querySelector('.about-page');
 let fontOptions = document.querySelector('.font-sizes');
 let footerLinks = document.querySelectorAll('.footer-item');
+let body = document.getElementsByTagName('body')[0];
 
 for (let i = 0; i < randomImages.length; i++) {
   let randomIndex = Math.floor(Math.random() * images.length);
@@ -151,6 +152,7 @@ for (let i = 0; i < randomImages.length; i++) {
       for (let i = 0; i < imagesUnspliced.length; i++) {
         if (imagesUnspliced[i].text === e.target.innerText) {
           fullSizeImageDiv.style.display = 'flex';
+          body.style.overflow = 'hidden';
           let fullSizeImagePath = imagesUnspliced[i].url.replace(
             /-preview/,
             ''
@@ -168,6 +170,7 @@ function exitFullSize() {
   fullSizeImageDiv.style.display = 'none';
   // reset img src to prevent previous photo from displaying while current img downloads
   imageToDisplay.src = '';
+  body.style.overflow = 'auto';
 }
 fullSizeImageDiv.addEventListener('click', function() {
   exitFullSize();
