@@ -173,6 +173,10 @@ h2 {
   font-weight: lighter;
 }
 
+#gallery-tab {
+  display: none;
+}
+
 .about-greeting {
   font-size: 3rem;
   font-weight: bold;
@@ -240,7 +244,7 @@ footer img {
   left: 0;
   right: 0;
   background-color: #111;
-  width: 100%;
+  width: 90%;
   padding: 20px;
   text-align: center;
   opacity: 0.8;
@@ -262,10 +266,11 @@ footer img {
   color: #fafafa;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .content {
     width: 90%;
     grid-template-columns: 1fr;
+    margin: 0 auto 0 auto;
   }
   .text {
     width: 90%;
@@ -275,6 +280,13 @@ footer img {
   footer {
     width: 100%;
     padding: 1.5rem;
+  }
+  #gallery-tab {
+    display: block;
+  }
+  .fullSizeImage img {
+    position: relative;
+    min-width: 95%;
   }
   .font-sizes {
     justify-content: space-between;
