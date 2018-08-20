@@ -100,6 +100,37 @@ let images = [
     text: 'My nephew playing in an old train at a park.',
     altText:
       "A young boy smiles in the doorway of a retired yellow train. The train reads 'Huntington'."
+  },
+  {
+    url: 'images/bastion-preview.jpg',
+    text: "Fisherman's Bastion on a foggy winter evening. Budapest, Hungary.",
+    altText:
+      "The stone tower of the Fisherman's Bastion is seen through a lit archway."
+  },
+  {
+    url: 'images/budapest-snow-preview.jpg',
+    text: 'Snow-covered benches in a public park. Budapest, Hungary.',
+    altText:
+      'Three wooden and iron chairs are blanketed in snow. A group of tall, evergreen trees are seen in the background.'
+  },
+  {
+    url: 'images/lisbon-van-preview.jpg',
+    text:
+      'Spring afternoon in front of the 25 de Abril Bridge. Lisbon, Portugal.',
+    altText:
+      'A purple Volkswagen van is parked in a parking lot. The famous 25th of April Bridge is seen in the distance over the Tagus River.'
+  },
+  {
+    url: 'images/london-snow-preview.jpg',
+    text: 'Snow-covered Mini Cooper in a London neighborhood. London, England.',
+    altText:
+      'A small, dark green Mini Cooper car is covered in snow and parked in front of a brown brick building.'
+  },
+  {
+    url: 'images/pilatus-preview.jpg',
+    text: 'View from the top of Mount Pilatus. Lucerne, Switzerland.',
+    altText:
+      'Snow-capped mountains are seen from the top of a larger mountain and a paraglider is seen flying over the mountains in the distance.'
   }
 ];
 
