@@ -264,11 +264,15 @@ footer img {
   color: #fafafa;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
   .content {
     width: 90%;
     grid-template-columns: 1fr;
     margin: 0 auto 0 auto;
+  }
+  .photo-container:hover .text,
+  .photo-container:hover .about-text {
+    display: none;
   }
   .about-page,
   footer {
