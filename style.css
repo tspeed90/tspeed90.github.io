@@ -272,7 +272,10 @@ footer img {
   }
   .photo-container:hover .text,
   .photo-container:hover .about-text {
-    display: none;
+    display: grid;
+    color: #fafafa;
+    font-size: 1.2em;
+    text-align: center;
   }
   .about-page,
   footer {
