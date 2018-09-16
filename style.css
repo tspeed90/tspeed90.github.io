@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -194,12 +194,11 @@ footer,
 .about-page {
   padding: 20px 60px;
   text-align: left;
-  font-size: 1.2em;
 }
 
 h2 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.7rem;
   font-weight: lighter;
 }
 
@@ -311,6 +310,7 @@ footer img {
   padding: 8px 0px;
   margin: 0;
   max-width: 160px;
+  font-size: 1.5rem;
 }
 .label-tab.return-home a {
   color: #eee093;

@@ -143,7 +143,7 @@ let descText = document.querySelector('.img-desc');
 let fullSizeImageDiv = document.querySelector('.fullSizeImage');
 let navAbout = document.querySelector('.about-button');
 let returnHomeTab = document.querySelector('.return-home');
-let content = document.querySelector('.about-page');
+// let content = document.querySelector('.about-page');
 let fontOptions = document.querySelector('.font-sizes');
 let footerLinks = document.querySelectorAll('.footer-item');
 let body = document.getElementsByTagName('body')[0];
@@ -251,7 +251,7 @@ window.addEventListener('scroll', function(e) {
 });
 
 fontOptions.addEventListener('click', function(e) {
-  content.style.fontSize = `${window.getComputedStyle(e.target).fontSize}`;
+  body.style.fontSize = `${window.getComputedStyle(e.target).fontSize}`;
 });
 
 fontOptions.addEventListener('keydown', function(e) {
@@ -261,6 +261,6 @@ fontOptions.addEventListener('keydown', function(e) {
     e.keyCode === 13 ||
     e.keyCode === 27
   ) {
-    content.style.fontSize = `${window.getComputedStyle(e.target).fontSize}`;
+    body.style.fontSize = `${window.getComputedStyle(e.target).fontSize}`;
   }
 });
