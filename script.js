@@ -147,6 +147,7 @@ let content = document.querySelector('.about-page');
 let fontOptions = document.querySelector('.font-sizes');
 let footerLinks = document.querySelectorAll('.footer-item');
 let body = document.getElementsByTagName('body')[0];
+const exitButton = document.querySelector('.exit-button');
 
 for (let i = 0; i < randomImages.length; i++) {
   let randomIndex = Math.floor(Math.random() * images.length);
@@ -167,6 +168,7 @@ for (let i = 0; i < randomImages.length; i++) {
           imagesUnspliced[i].text === e.target.querySelector('.text').innerText
         ) {
           fullSizeImageDiv.style.display = 'flex';
+          fullSizeImageDiv.focus();
           let fullSizeImagePath = imagesUnspliced[i].url.replace(
             /-preview/,
             ''
@@ -182,6 +184,7 @@ for (let i = 0; i < randomImages.length; i++) {
       for (let i = 0; i < imagesUnspliced.length; i++) {
         if (imagesUnspliced[i].text === e.target.innerText) {
           fullSizeImageDiv.style.display = 'flex';
+          fullSizeImageDiv.focus();
           body.style.overflow = 'hidden';
           let fullSizeImagePath = imagesUnspliced[i].url.replace(
             /-preview/,
@@ -189,7 +192,6 @@ for (let i = 0; i < randomImages.length; i++) {
           );
           imageToDisplay.src = fullSizeImagePath;
           descText.textContent = imagesUnspliced[i].text;
-          console.log(descText.textContent);
         }
       }
     }
@@ -212,6 +214,13 @@ document.addEventListener('keydown', function(e) {
     e.keyCode === 27 ||
     e.keyCode === 32
   ) {
+    exitFullSize();
+    e.preventDefault();
+  }
+});
+
+exitButton.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' || e.keyCode === 13) {
     exitFullSize();
     e.preventDefault();
   }

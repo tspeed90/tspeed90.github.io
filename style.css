@@ -34,9 +34,11 @@ h1,
 .font-sizes {
   display: flex;
   justify-content: flex-end;
-  color: #333;
+  font-weight: bolder;
+  color: #222;
   min-height: 2rem;
   line-height: 0.5;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -127,6 +129,7 @@ footer,
   margin: 2px;
   cursor: pointer;
 }
+
 .photo {
   padding-bottom: 100%;
   border-radius: 10px;
@@ -247,6 +250,22 @@ footer img {
   font-size: 26px;
   margin: 0 auto;
 }
+
+.fullSizeImage .exit-button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: #000;
+  padding: 15px;
+  font-size: 2rem;
+  color: #fff;
+  outline-color: #fff;
+}
+
+.fullSizeImage .exit-button:hover {
+  cursor: pointer;
+}
+
 .label-tab.return-home {
   display: none;
   position: fixed;
