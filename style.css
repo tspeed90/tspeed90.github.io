@@ -1,9 +1,12 @@
 html {
   font-size: 16px;
-  background-color: #700024;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url('./asfalt-dark.png'), #c0a520 repeat;
 }
 body {
-  background-color: inherit;
+  background: url('./asfalt-dark.png'), inherit repeat;
   font-family: 'Barlow Condensed', arial, sans-serif;
 }
 @keyframes slide-in-nav {
@@ -31,7 +34,7 @@ h1,
 .font-sizes {
   display: flex;
   justify-content: flex-end;
-  color: white;
+  color: #333;
   min-height: 2rem;
   line-height: 0.5;
   margin-bottom: 2rem;
@@ -67,10 +70,10 @@ h1,
 }
 
 nav {
-  background-color: #9a8576;
-  color: #fafafa;
+  background: #c7b133;
+  color: #333;
   font-size: 2rem;
-  border: solid 3px rgb(143, 7, 49);
+  border: solid 3px #fafafa;
   border-top: none;
   top: 0;
   right: 10px;
@@ -80,23 +83,21 @@ nav {
 }
 nav a {
   text-decoration: none;
-  border-bottom: 2px solid white;
   font-size: 1.9rem;
-  color: #fafafa;
+  color: #333;
   margin: 10px;
 }
 
 nav a:hover {
-  color: rgb(143, 7, 49);
-  border-bottom: 2px solid rgb(143, 7, 49);
+  color: #fff;
+  border-bottom: 2px solid #fafafa;
 }
 footer,
 .about-page {
   width: 75%;
-  background-color: rgb(120, 3, 40);
-  color: #fafafa;
+  background-color: #c7b133;
+  color: #222;
   box-sizing: border-box;
-  border: solid 3px rgb(143, 7, 49);
   border-radius: 10px;
   margin: auto;
   align-items: center;
@@ -114,14 +115,14 @@ footer,
 .middle-container {
   position: relative;
   background-color: #fafafa;
-  border: solid 3px rgb(143, 7, 49);
+  border: solid 3px #fafafa;
   border-radius: 10px;
   margin: 2px;
   cursor: pointer;
 }
 .photo {
   padding-bottom: 100%;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 .text,
 .about-text {
@@ -148,7 +149,7 @@ footer,
 }
 .middle-container {
   box-sizing: border-box;
-  border-color: #9a8576;
+  border-color: #efe6bd;
   cursor: default;
 }
 
@@ -186,13 +187,11 @@ h2 {
   color: #fafafa;
 }
 .label-tab {
-  background-color: #9a8576;
-  color: #fafafa;
+  background-color: #333;
+  color: #eee093;
   font-size: 1.6em;
-  font-weight: lighter;
   text-align: center;
-  border: solid 3px rgb(143, 7, 49);
-  border-bottom: none;
+  border-radius: 10px 10px 0 0;
   padding: 10px 25px;
   width: 180px;
   margin: auto;
@@ -202,7 +201,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 0px;
-  height: 120px;
+  height: 150px;
   margin-bottom: 300px;
 }
 
@@ -261,7 +260,7 @@ footer img {
   max-width: 160px;
 }
 .label-tab.return-home a {
-  color: #fafafa;
+  color: #eee093;
 }
 
 @media screen and (max-width: 420px) {
