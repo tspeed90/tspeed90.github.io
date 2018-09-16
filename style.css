@@ -9,6 +9,11 @@ body {
   background: url('./asfalt-dark.png'), inherit repeat;
   font-family: 'Barlow Condensed', arial, sans-serif;
 }
+
+a:focus {
+  outline-color: #000;
+}
+
 @keyframes slide-in-nav {
   from {
     top: -50px;
@@ -25,6 +30,7 @@ body {
     opacity: 0.7;
   }
 }
+
 h1,
 .nav-title {
   margin-left: -2000px;
@@ -52,6 +58,7 @@ h1,
   margin-right: 5px;
   margin-left: 10px;
   vertical-align: top;
+  padding: 3px;
 }
 
 .medium-font {
@@ -59,12 +66,22 @@ h1,
   font-size: 22px;
   margin-right: 5px;
   vertical-align: top;
+  padding: 3px;
 }
 
 .large-font {
   display: inline-block;
   font-size: 26px;
   vertical-align: top;
+  padding: 3px;
+}
+
+.small-font:focus,
+.medium-font:focus,
+.large-font:focus {
+  outline: none;
+  background-color: white;
+  padding: 5px;
 }
 
 .font-options-text {
@@ -102,6 +119,12 @@ nav a:hover {
   border-bottom: 2px solid #eee093;
 }
 
+nav a:focus {
+  outline: none;
+  border-bottom: 2px solid #eee093;
+  background-color: #333;
+}
+
 footer,
 .about-page {
   width: 75%;
@@ -130,10 +153,16 @@ footer,
   cursor: pointer;
 }
 
+.photo-container:focus {
+  border: solid 3px #333;
+  outline: none;
+}
+
 .photo {
   padding-bottom: 100%;
   border-radius: 10px;
 }
+
 .text {
   position: absolute;
   display: none;
@@ -184,8 +213,13 @@ h2 {
   margin: 0;
 }
 .a11y-links {
-  color: #fafafa;
+  color: #000;
 }
+
+.a11y-links:focus {
+  background-color: #fff;
+}
+
 .label-tab {
   background-color: #333;
   color: #eee093;
@@ -208,9 +242,11 @@ footer {
 .footer-item {
   max-height: 100%;
 }
+
 footer img {
   max-width: 100%;
 }
+
 .hidden {
   display: none;
 }
@@ -218,6 +254,7 @@ footer img {
 .square-footer-objects {
   max-height: 85px;
 }
+
 .fullSizeImage {
   position: fixed;
   /* will change to display: flex in javascript to show full size image*/
@@ -277,6 +314,10 @@ footer img {
 }
 .label-tab.return-home a {
   color: #eee093;
+}
+
+.label-tab.return-home a:focus {
+  outline-color: #fff;
 }
 
 @media screen and (max-width: 420px) {

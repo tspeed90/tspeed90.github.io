@@ -253,3 +253,14 @@ window.addEventListener('scroll', function(e) {
 fontOptions.addEventListener('click', function(e) {
   content.style.fontSize = `${window.getComputedStyle(e.target).fontSize}`;
 });
+
+fontOptions.addEventListener('keydown', function(e) {
+  if (
+    e.key === 'Enter' ||
+    e.key === ' ' ||
+    e.keyCode === 13 ||
+    e.keyCode === 27
+  ) {
+    content.style.fontSize = `${window.getComputedStyle(e.target).fontSize}`;
+  }
+});
