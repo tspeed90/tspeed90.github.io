@@ -141,7 +141,6 @@ let textElement = document.querySelectorAll('.text');
 let imageToDisplay = document.querySelector('.largePhoto');
 let descText = document.querySelector('.img-desc');
 let fullSizeImageDiv = document.querySelector('.fullSizeImage');
-let profilePhoto = document.querySelector('.about-me');
 let navAbout = document.querySelector('.about-button');
 let returnHomeTab = document.querySelector('.return-home');
 let content = document.querySelector('.about-page');

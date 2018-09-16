@@ -119,8 +119,7 @@ footer,
   margin: 100px auto 0 auto;
 }
 
-.photo-container,
-.middle-container {
+.photo-container {
   position: relative;
   background-color: #fafafa;
   border: solid 3px #fafafa;
@@ -132,8 +131,7 @@ footer,
   padding-bottom: 100%;
   border-radius: 10px;
 }
-.text,
-.about-text {
+.text {
   position: absolute;
   display: none;
   border-radius: 6px;
@@ -145,8 +143,7 @@ footer,
   opacity: 0.7;
   animation: ease-in-opacity 1s;
 }
-.photo-container:hover .text,
-.photo-container:hover .about-text {
+.photo-container:hover .text {
   display: grid;
   color: #fafafa;
   font-size: 1.4em;
@@ -155,21 +152,13 @@ footer,
   justify-content: center;
   background-color: #000;
 }
-.middle-container {
-  box-sizing: border-box;
-  border-color: #efe6bd;
-  cursor: default;
-}
 
-.about-me img,
 .random-photo img {
   position: absolute;
   max-width: 100%;
   border-radius: 6px;
 }
-.photo-container:hover .about-text {
-  font-size: 1.4em;
-}
+
 .about-page {
   padding: 20px 60px;
   text-align: left;
@@ -230,7 +219,7 @@ footer img {
   position: fixed;
   /* will change to display: flex in javascript to show full size image*/
   display: none;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   top: 0;
   bottom: 0;
   left: 0;
@@ -277,8 +266,7 @@ footer img {
     grid-template-columns: 1fr;
     margin: 0 auto 0 auto;
   }
-  .photo-container:hover .text,
-  .photo-container:hover .about-text {
+  .photo-container:hover .text {
     display: grid;
     color: #fafafa;
     font-size: 1.2em;
