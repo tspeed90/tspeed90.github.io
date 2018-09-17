@@ -368,4 +368,13 @@ footer img {
     margin: 0;
     padding: 0;
   }
+  .headshot {
+    margin: auto;
+  }
+
+  .headshot {
+    display: block;
+    float: none;
+    margin: 0 auto 20px auto;
+  }
 }
