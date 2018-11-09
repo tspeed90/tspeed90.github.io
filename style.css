@@ -4,6 +4,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background: url('./asfalt-dark.png'), #c0a520 repeat;
+  scroll-behavior: smooth;
 }
 body {
   background: url('./asfalt-dark.png'), inherit repeat;
