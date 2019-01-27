@@ -141,7 +141,7 @@ footer,
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 75%;
+  width: 80%;
   margin: 100px auto 0 auto;
 }
 
@@ -320,13 +320,19 @@ footer img {
 .label-tab.return-home a:focus {
   outline-color: #fff;
 }
-
-@media screen and (max-width: 420px) {
+/* Larger than 750-800px makes the image container behind the image visible. This media query should stay between 700 - 750px */
+@media screen and (max-width: 700px) {
   .content {
-    width: 90%;
-    grid-template-columns: 1fr;
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 auto 0 auto;
+    grid-auto-flow: dense;
   }
+
+  .large {
+    grid-column: span 2;
+  }
+
   .photo-container:hover .text {
     display: grid;
     color: #fafafa;
@@ -377,5 +383,11 @@ footer img {
     display: block;
     float: none;
     margin: 0 auto 20px auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    width: 95%;
   }
 }
