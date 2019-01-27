@@ -12,11 +12,12 @@
   </head>
 
   <body>
-    <h1>Tammy Speed, Developer-In-Training</h1>
+    <h1>Tammy Speed</h1>
 
     <nav role="navigation">
       <h2 class="nav-title">Navigation</h2>
       <a href="#about-tab" class="about-button" id="home">About</a> /
+      <a href="#gallery-tab">Photography</a> /
       <a href="#profile-links">Links</a>
     </nav>
     <div class="fullSizeImage" tabindex="-1">
@@ -25,6 +26,56 @@
       <img src="" class="largePhoto" />
     </div>
     <main>
+      <div class="label-tab" id="about-tab"><h2>About Me</h2></div>
+      <section class="about-page">
+        <aside class="font-sizes">
+          <div class="font-options-text">Font size options:</div>
+          <div class="font-options">
+            <span class="small-font" role="button" tabindex="0">A</span>
+            <span class="medium-font" role="button" tabindex="0">A</span>
+            <span class="large-font" role="button" tabindex="0">A</span>
+          </div>
+        </aside>
+        <img src="./images/me.jpg" alt="tammy" class="headshot" />
+        <p class="about-greeting">Hello,</p>
+        <p>
+          I'm Tammy! I am a Software Developer and California native currently
+          living in London. I am also a graduate of the London-based developer
+          training program,
+          <a href="https://foundersandcoders.com" class="a11y-links"
+            >Founders and Coders</a
+          >. I had an incredible time learning in a collaborative environment
+          and I'm extremely grateful for the experience!
+        </p>
+
+        <p>
+          I graduated from California State University, Fresno with a Bachelor's
+          degree in Deaf Studies and worked as a Sign Language Interpreter for 3
+          years. As a result of my experiences as an interpreter, I highly value
+          accessibility and creating tech that is mindful of the user experience
+          for people from all walks of life. I continue to use this webpage as
+          an opportunity to implement and familiarize myself with accessibility
+          practices, putting into practice things like ARIA attributes,
+          customizable font size, strong, descriptive alt-text as well as
+          utilizing Chromevox and other tools like
+          <a
+            href="https://developers.google.com/web/tools/lighthouse/"
+            class="a11y-links"
+            >Lighthouse</a
+          >
+          and
+          <a href="https://www.deque.com/axe/" class="a11y-links">aXe</a> for
+          running audits.
+        </p>
+
+        <p>
+          Some of my hobbies include cooking, baking, attending meetups,
+          learning new things (coding and non-coding related), going on holiday,
+          and taking photos (often on said holidays). You can see some of my
+          photography in a small gallery I've put together below. Tip: refresh
+          the page to see some more photos!
+        </p>
+      </section>
       <div class="label-tab" id="gallery-tab"><h2>Photo Gallery</h2></div>
       <section class="content">
         <!-- aria-label being set in javascript on each photo -->
@@ -64,57 +115,6 @@
           <div class="photo random-photo"><img src="" alt="" /></div>
           <div class="text"></div>
         </div>
-      </section>
-      <div class="label-tab" id="about-tab"><h2>About Me</h2></div>
-      <section class="about-page">
-        <aside class="font-sizes">
-          <div class="font-options-text">Font size options:</div>
-          <div class="font-options">
-            <span class="small-font" role="button" tabindex="0">A</span>
-            <span class="medium-font" role="button" tabindex="0">A</span>
-            <span class="large-font" role="button" tabindex="0">A</span>
-          </div>
-        </aside>
-        <img src="./images/me.jpg" alt="tammy" class="headshot" />
-        <p class="about-greeting">Hello,</p>
-        <p>
-          I'm Tammy and I am a Javascript/Node.js developer! I began learning to
-          code in early 2017 after a long while of being interested, but never
-          making the jump. I began with Java working through Codecademy &amp;
-          Udacity and worked on a few small projects before switching to HTML,
-          CSS &amp; Javascript. I have since taken part in the London developer
-          training program, Founders and Coders, which was an amazing
-          experience.
-        </p>
-
-        <p>
-          I graduated from California State University, Fresno with a Bachelor's
-          degree in Deaf Studies and worked as a Sign Language Interpreter for 3
-          years. I learned and experienced the importance of accessibility and
-          how the deaf &amp; deaf-blind communities often feel overlooked and
-          ignored. As a result, I highly value accessibility and creating tech
-          that is mindful of the user experience for people from all walks of
-          life. I am continually using this webpage as an opportunity to
-          implement and familiarize myself with accessibility practices, putting
-          into practice things like ARIA attributes, customizable font size,
-          strong, descriptive alt-text as well as utilizing Chromevox and other
-          tools like
-          <a
-            href="https://developers.google.com/web/tools/lighthouse/"
-            class="a11y-links"
-            >Lighthouse</a
-          >
-          and
-          <a href="https://www.deque.com/axe/" class="a11y-links">aXe</a> for
-          auditing the page.
-        </p>
-
-        <p>
-          This gallery is a place for me to share photos I've taken that I
-          enjoy. Please browse, click and hover to learn more about me and the
-          photos you see on this page. You can also refresh to see different
-          images. Enjoy!
-        </p>
       </section>
     </main>
 
