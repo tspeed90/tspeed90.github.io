@@ -17,8 +17,7 @@
     <nav role="navigation">
       <h2 class="nav-title">Navigation</h2>
       <a href="#about-tab" class="about-button" id="home">About</a> /
-      <a href="#gallery-tab">Photography</a> /
-      <a href="#profile-links">Links</a>
+      <a href="#gallery-tab">Gallery</a> / <a href="#profile-links">Links</a>
     </nav>
     <div class="fullSizeImage" tabindex="-1">
       <p class="img-desc"></p>
@@ -76,7 +75,7 @@
           the page to see some more photos!
         </p>
       </section>
-      <div class="label-tab" id="gallery-tab"><h2>Photo Gallery</h2></div>
+      <div class="label-tab" id="gallery-tab"><h2>Gallery</h2></div>
       <section class="content">
         <!-- aria-label being set in javascript on each photo -->
         <div class="photo-container" tabindex="0" role="button">
@@ -125,12 +124,12 @@
     >
       <h2>Links</h2>
     </div>
-    <footer>
+    <section class="links">
       <div class="footer-item">
         <a href="https://github.com/tspeed90/" target="_blank">
           <img
             src="images/github-logo.png"
-            class="square-footer-objects"
+            class="square-footer-objects inverted-icons"
             aria-label="git hub logo"
             alt="GitHub logo"
           />
@@ -139,9 +138,14 @@
       </div>
       <div class="footer-item">
         <a href="TammySpeedCV.pdf" target="_blank">
-          <img src="images/cv-logo.png" aria-label="cv logo" alt="cv logo" />
+          <img
+            src="images/resume.svg"
+            class="square-footer-objects"
+            aria-label="cv logo"
+            alt="cv logo"
+          />
         </a>
-        <div class="hidden">CV / Resume</div>
+        <div class="hidden">My CV</div>
       </div>
       <div class="footer-item">
         <a href="guess-the-number/index.html" target="_blank">
@@ -152,8 +156,26 @@
             alt="Guess the Number logo"
           />
         </a>
-        <div class="hidden">Guess The Number</div>
+        <div class="hidden">Play a game!</div>
       </div>
+    </section>
+    <footer>
+      Icons made by
+      <a href="https://www.freepik.com/" class="a11y-links" title="Freepik"
+        >Freepik</a
+      >
+      from
+      <a href="https://www.flaticon.com/" class="a11y-links" title="Flaticon"
+        >www.flaticon.com</a
+      >
+      is licensed by
+      <a
+        href="http://creativecommons.org/licenses/by/3.0/"
+        class="a11y-links"
+        title="Creative Commons BY 3.0"
+        target="_blank"
+        >CC 3.0 BY</a
+      >
     </footer>
     <div class="label-tab return-home"><a href="#home">^ Back To Top</a></div>
     <script src="script.js"></script>

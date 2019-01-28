@@ -226,15 +226,15 @@ exitButton.addEventListener('keydown', function(e) {
   }
 });
 
-footerLinks.forEach(function(link) {
-  link.addEventListener('mouseover', function(e) {
-    const img = link.querySelector('.hidden');
-    img.classList.remove('hidden');
-    setTimeout(function() {
-      img.classList.add('hidden');
-    }, 1300);
-  });
-});
+// footerLinks.forEach(function(link) {
+//   link.addEventListener('mouseover', function(e) {
+//     const img = link.querySelector('.hidden');
+//     img.classList.remove('hidden');
+//     setTimeout(function() {
+//       img.classList.add('hidden');
+//     }, 1300);
+//   });
+// });
 
 let totalHeight = document.body.scrollHeight;
 let screenHeight = window.innerHeight;

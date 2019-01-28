@@ -133,7 +133,7 @@ nav a:focus {
   background-color: #333;
 }
 
-footer,
+.links,
 .about-page {
   width: 75%;
   background-color: #c7b133;
@@ -238,7 +238,7 @@ h2 {
   margin: auto;
   margin-top: 60px;
 }
-footer {
+.links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 0px;
@@ -250,16 +250,17 @@ footer {
   max-height: 100%;
 }
 
-footer img {
+.links img {
   max-width: 100%;
-}
-
-.hidden {
-  display: none;
+  margin-bottom: 8px;
 }
 
 .square-footer-objects {
-  max-height: 85px;
+  height: 75px;
+}
+
+.inverted-icons {
+  filter: invert(1);
 }
 
 .fullSizeImage {
@@ -327,6 +328,10 @@ footer img {
 .label-tab.return-home a:focus {
   outline-color: #fff;
 }
+
+footer {
+  text-align: center;
+}
 /* Larger than 750-800px makes the image container behind the image visible. This media query should stay between 700 - 750px */
 @media screen and (max-width: 700px) {
   .content {
@@ -347,7 +352,7 @@ footer img {
     text-align: center;
   }
   .about-page,
-  footer {
+  .links {
     width: 100%;
     padding: 1.5rem;
   }
