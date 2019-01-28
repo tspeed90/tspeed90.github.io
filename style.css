@@ -135,7 +135,7 @@ nav a:focus {
 
 .links,
 .about-page {
-  width: 75%;
+  width: 80%;
   background-color: #c7b133;
   color: #222;
   box-sizing: border-box;
@@ -400,6 +400,12 @@ footer {
 
 @media screen and (max-width: 900px) {
   .content {
+    width: 95%;
+  }
+  .links {
+    width: 95%;
+  }
+  .about-page {
     width: 95%;
   }
 }
