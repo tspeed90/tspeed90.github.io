@@ -3,11 +3,11 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background: url('./asfalt-dark.png'), #c0a520 repeat;
+  background: url('/assets/asfalt-dark.png'), #c0a520 repeat;
   scroll-behavior: smooth;
 }
 body {
-  background: url('./asfalt-dark.png'), inherit repeat;
+  background: url('/assets/asfalt-dark.png'), inherit repeat;
   font-family: 'Barlow Condensed', arial, sans-serif;
 }
 
@@ -236,11 +236,8 @@ h2 {
   color: #eee093;
   font-size: 1.6em;
   text-align: right;
-  /* border-radius: 10px 10px 0 0; */
   padding: 10px 25px;
   width: 200px;
-  /* margin: auto; */
-  /* margin-top: 60px; */
   position: absolute;
   top: -55px;
   left: 0;
