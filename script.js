@@ -141,11 +141,8 @@ let textElement = document.querySelectorAll('.text');
 let imageToDisplay = document.querySelector('.largePhoto');
 let descText = document.querySelector('.img-desc');
 let fullSizeImageDiv = document.querySelector('.fullSizeImage');
-let navAbout = document.querySelector('.about-button');
 let returnHomeTab = document.querySelector('.return-home');
-// let content = document.querySelector('.about-page');
 let fontOptions = document.querySelector('.font-sizes');
-let footerLinks = document.querySelectorAll('.footer-item');
 let body = document.getElementsByTagName('body')[0];
 const exitButton = document.querySelector('.exit-button');
 
