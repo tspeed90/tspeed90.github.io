@@ -15,18 +15,18 @@
     <h1>Tammy Speed</h1>
 
     <nav role="navigation">
-      <h2 class="nav-title">Navigation</h2>
-      <a href="#about-tab" class="about-button" id="home">About</a> /
-      <a href="#gallery-tab">Gallery</a> / <a href="#profile-links">Links</a>
+      <a href="#about-tab" class="about-button" id="home">About</a>
+      <a href="#gallery-tab">Gallery</a>
+      <a href="#profile-links">Links</a>
     </nav>
     <div class="fullSizeImage" tabindex="-1">
       <p class="img-desc"></p>
-      <div class="exit-button" tabindex="0">X</div>
+      <div class="exit-button" tabindex="0">x</div>
       <img src="" class="largePhoto" />
     </div>
     <main>
-      <div class="label-tab" id="about-tab"><h2>About Me</h2></div>
       <section class="about-page">
+        <div class="label-tab" id="about-tab"><h2>About Me</h2></div>
         <aside class="font-sizes">
           <div class="font-options-text">Font size options:</div>
           <div class="font-options">
@@ -48,15 +48,16 @@
         </p>
 
         <p>
-          I graduated from California State University, Fresno with a Bachelor's
-          degree in Deaf Studies and worked as a Sign Language Interpreter for 3
-          years. As a result of my experiences as an interpreter, I highly value
-          accessibility and creating tech that is mindful of the user experience
-          for people from all walks of life. I continue to use this webpage as
-          an opportunity to implement and familiarize myself with accessibility
-          practices, putting into practice things like ARIA attributes,
-          customizable font size, strong, descriptive alt-text as well as
-          utilizing Chromevox and other tools like
+          In my pre-coding life, I graduated from California State University,
+          Fresno with a degree in Deaf Studies and worked as a Sign Language
+          Interpreter for 3 years in universities. As a result of my experiences
+          as an interpreter, I highly value accessibility and creating tech that
+          is mindful of the user experience for people from all walks of life. I
+          continue to use this webpage as an opportunity to implement and
+          familiarize myself with accessibility practices, putting into practice
+          things like ARIA attributes, customizable font size, strong,
+          descriptive alt-text as well as utilizing Chromevox and other tools
+          like
           <a
             href="https://developers.google.com/web/tools/lighthouse/"
             class="a11y-links"
@@ -75,8 +76,8 @@
           the page to see some more photos!
         </p>
       </section>
-      <div class="label-tab" id="gallery-tab"><h2>Gallery</h2></div>
       <section class="content">
+        <div class="label-tab" id="gallery-tab"><h2>Gallery</h2></div>
         <!-- aria-label being set in javascript on each photo -->
         <div class="photo-container" tabindex="0" role="button">
           <div class="photo random-photo"><img src="" alt="" /></div>
@@ -117,46 +118,43 @@
       </section>
     </main>
 
-    <div
-      class="label-tab"
-      id="profile-links"
-      aria-label="links will open in new browser tab"
-    >
-      <h2>Links</h2>
-    </div>
     <section class="links">
+      <div
+        class="label-tab"
+        id="profile-links"
+        aria-label="links will open in new browser tab"
+      >
+        <h2>Links</h2>
+      </div>
       <div class="footer-item">
         <a href="https://github.com/tspeed90/" target="_blank">
           <img
             src="images/github-logo.png"
             class="square-footer-objects inverted-icons"
-            aria-label="git hub logo"
             alt="GitHub logo"
           />
         </a>
-        <div class="hidden">Github</div>
+        <div class="footer-item-label">Github</div>
       </div>
       <div class="footer-item">
         <a href="TammySpeedCV.pdf" target="_blank">
           <img
             src="images/resume.svg"
             class="square-footer-objects"
-            aria-label="cv logo"
             alt="cv logo"
           />
         </a>
-        <div class="hidden">My CV</div>
+        <div class="footer-item-label">My CV</div>
       </div>
       <div class="footer-item">
         <a href="guess-the-number/index.html" target="_blank">
           <img
             src="images/guess-the-number.png"
             class="square-footer-objects"
-            aria-label="guess the number logo"
             alt="Guess the Number logo"
           />
         </a>
-        <div class="hidden">Play a game!</div>
+        <div class="footer-item-label">Play a game!</div>
       </div>
     </section>
     <footer>
@@ -177,7 +175,7 @@
         >CC 3.0 BY</a
       >
     </footer>
-    <div class="label-tab return-home"><a href="#home">^ Back To Top</a></div>
+    <div class="return-home"><a href="#home">^ Back To Top</a></div>
     <script src="script.js"></script>
   </body>
 </html>

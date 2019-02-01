@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 20px;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,11 +38,7 @@ h1 {
   font-weight: lighter;
   margin: 75px 0;
   font-size: 2.5rem;
-}
-
-.nav-title {
-  margin-left: -2000px;
-  height: 0px;
+  letter-spacing: 2px;
 }
 
 .font-sizes {
@@ -106,53 +102,60 @@ h1 {
 }
 
 nav {
-  background: #333;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    to left,
+    #333,
+    rgba(51, 51, 51, 0.452) 90%,
+    rgba(51, 51, 51, 0) 100%
+  );
   color: #fff;
   font-size: 2rem;
-  border-radius: 0 0 10px 10px;
   top: 0;
-  right: 10px;
-  padding: 5px 10px 15px 10px;
-  position: absolute;
+  right: 0;
   animation: slide-in-nav 2s;
+  justify-content: flex-end;
 }
+
 nav a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #eee093;
   margin: 10px;
-}
-
-nav a:hover {
-  border-bottom: 2px solid #eee093;
+  text-shadow: 1px 1px 2px #333;
 }
 
 nav a:focus {
   outline: none;
   border-bottom: 2px solid #eee093;
-  background-color: #333;
 }
 
 .links,
 .about-page {
   width: 80%;
-  background-color: #c7b133;
   color: #222;
   box-sizing: border-box;
-  border-radius: 10px;
-  margin: auto;
+  margin: 6rem auto 0 auto;
   align-items: center;
-  text-align: center;
-  justify-content: center;
+  /* text-align: center; */
+  position: relative;
 }
+
+.about-page {
+  text-align: left;
+}
+
 .content {
+  width: 80%;
+  /* background-color: #c7b133; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 80%;
-  margin: 0 auto;
-  background-color: #c7b133;
+  /* border-radius: 10px; */
+  position: relative;
+  margin: 6rem auto 0 auto;
   padding: 5px;
-  border-radius: 10px;
 }
 
 .photo-container {
@@ -202,11 +205,6 @@ nav a:focus {
   border-radius: 6px;
 }
 
-.about-page {
-  padding: 20px 60px;
-  text-align: left;
-}
-
 h2 {
   margin: 0;
   font-size: 1.7rem;
@@ -217,6 +215,7 @@ h2 {
   font-size: 3rem;
   font-weight: bold;
   margin: 0;
+  letter-spacing: 2px;
 }
 .a11y-links {
   color: #000;
@@ -228,26 +227,49 @@ h2 {
 }
 
 .label-tab {
-  background-color: #333;
+  background: linear-gradient(
+    to left,
+    #333,
+    rgba(51, 51, 51, 0.452) 80%,
+    rgba(51, 51, 51, 0) 100%
+  );
   color: #eee093;
   font-size: 1.6em;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
+  text-align: right;
+  /* border-radius: 10px 10px 0 0; */
   padding: 10px 25px;
-  width: 180px;
-  margin: auto;
-  margin-top: 60px;
+  width: 200px;
+  /* margin: auto; */
+  /* margin-top: 60px; */
+  position: absolute;
+  top: -55px;
+  left: 0;
+  z-index: -1;
+  letter-spacing: 2px;
 }
+
 .links {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 0px;
+  margin-top: 4rem;
   height: 150px;
-  margin-bottom: 300px;
+  margin-bottom: 4rem;
+  background-color: #c7b133;
+  text-align: center;
 }
 
 .footer-item {
   max-height: 100%;
+}
+
+.footer-item a:focus {
+  outline: none;
+}
+
+.footer-item a:focus + .footer-item-label {
+  outline: none;
+  text-decoration: underline;
 }
 
 .links img {
@@ -311,33 +333,44 @@ h2 {
   cursor: pointer;
 }
 
-.label-tab.return-home {
+.return-home {
   display: none;
   position: fixed;
+  background: linear-gradient(
+    to left,
+    #333,
+    rgba(51, 51, 51, 0.452) 80%,
+    rgba(51, 51, 51, 0) 100%
+  );
+  text-align: right;
   bottom: 0;
-  right: 10px;
-  padding: 8px 0px;
+  right: 0;
+  padding: 8px 8px;
   margin: 0;
-  max-width: 160px;
+  width: 200px;
   font-size: 1.5rem;
+  letter-spacing: 2px;
 }
-.label-tab.return-home a {
+.return-home a {
+  text-decoration: none;
   color: #eee093;
 }
 
-.label-tab.return-home a:focus {
-  outline-color: #fff;
+.return-home a:focus {
+  outline: none;
+  border-bottom: 2px solid #eee093;
 }
 
 footer {
   text-align: center;
+  margin-bottom: 4rem;
 }
 /* Larger than 750-800px makes the image container behind the image visible. This media query should stay between 700 - 750px */
 @media screen and (max-width: 700px) {
   .content {
     width: 95%;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto 0 auto;
+    margin: 2rem auto 0 auto;
     grid-auto-flow: dense;
   }
 
@@ -362,6 +395,10 @@ footer {
   .fullSizeImage img {
     position: relative;
     min-width: 95%;
+  }
+
+  nav {
+    justify-content: space-around;
   }
   .font-sizes {
     justify-content: space-between;
@@ -395,6 +432,14 @@ footer {
     display: block;
     float: none;
     margin: 0 auto 20px auto;
+  }
+  footer {
+    margin-bottom: 4rem;
+  }
+  .label-tab {
+    /* width: 100%; */
+    width: 110px;
+    letter-spacing: 0;
   }
 }
 
