@@ -1,5 +1,5 @@
 import React from "react"
-import comp from "../../public/icons/oldcomp.png"
+import comp from "../../src/images/landing_icon.svg"
 import "../components/landingpage.css"
 
 const Landing = () => (

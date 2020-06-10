@@ -9,8 +9,8 @@ const Projects = () => (
     >
       <h3 className="project-name">BookQueue</h3>
       <div className="description">
-        BookQueue is an application allowing users to find popular books by
-        category and save them to their shelf for future reading.
+        BookQueue is a site to help users find and keep track of interesting
+        books to read later.
         <p class="stack-info">React &amp; Redux</p>
         <div class="triangle react-triangle" />
       </div>
