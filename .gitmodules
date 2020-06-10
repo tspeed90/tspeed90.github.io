@@ -1,0 +1,3 @@
+[submodule "guess-the-number"]
+	path = guess-the-number
+	url = https://github.com/tspeed90/guess-the-number.git

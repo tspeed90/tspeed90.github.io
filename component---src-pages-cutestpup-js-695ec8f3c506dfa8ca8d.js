@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{Zvtl:function(t,e,c){"use strict";c.r(e);var n=c("q1tI"),a=c.n(n),p=c("cc/q"),i=c.n(p);e.default=function(){return a.a.createElement("section",null,a.a.createElement("img",{src:i.a,alt:"Sata, the dog",height:"700px"}))}},"cc/q":function(t,e,c){t.exports=c.p+"static/cutestpup-b62a79659c76ffc550b1726ae804f6dd.jpg"}}]);
-//# sourceMappingURL=component---src-pages-cutestpup-js-695ec8f3c506dfa8ca8d.js.map
